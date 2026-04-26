@@ -1,14 +1,14 @@
-export default function DashboardPage() {
+export default function ImagePage() {
   return (
     <div className="mx-auto max-w-2xl">
       <p className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-        Overview
+        Workspace
       </p>
       <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight">
-        Dashboard
+        Image
       </h1>
       <p className="mt-3 text-sm text-muted-foreground">
-        Choose a tool from the sidebar to get started.
+        Image generation will appear here.
       </p>
     </div>
   );
