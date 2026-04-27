@@ -16,6 +16,8 @@
 # next.js
 /.next/
 /out/
+/public/generated-images/
+/public/generated-videos/
 
 # production
 /build

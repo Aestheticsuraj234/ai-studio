@@ -1,15 +1,25 @@
+"use client";
+
+import { RiChat3Line } from "@remixicon/react";
+
+import { WorkspaceAiChat } from "@/components/workspace/workspace-ai-chat";
+
 export default function ChatPage() {
   return (
-    <div className="mx-auto max-w-2xl">
-      <p className="text-xs font-medium tracking-wider text-muted-foreground uppercase">
-        Workspace
-      </p>
-      <h1 className="mt-2 font-heading text-3xl font-semibold tracking-tight">
-        Chat
-      </h1>
-      <p className="mt-3 text-sm text-muted-foreground">
-        AI assistant conversations will appear here.
-      </p>
-    </div>
+    <WorkspaceAiChat
+      mode="chat"
+      title="Chat"
+      badge="Powered by Gemini 2.5 Flash"
+      placeholder="Send a message…"
+      emptyState={{
+        icon: (
+          <span className="flex size-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+            <RiChat3Line className="size-6" />
+          </span>
+        ),
+        title: "Start a conversation",
+        description: "Ask anything — answers stream in as the model thinks.",
+      }}
+    />
   );
 }
